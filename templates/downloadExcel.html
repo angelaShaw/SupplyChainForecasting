@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </script>
+<body>
+<center>
+      <dl>
+                    <div class="jumbotron">
+                            <h1>Supply Chain Forecasting </h1>
+                    </div>
+          <div class="container">
+</div>
+</script>
+    <meta charset="UTF-8">
+    <title>Mareana</title>
+    <ul>
+        CLICK TO DOWNLOAD RESULTS
+        <a href="./store/{{file_name}}">{{file_name}}</a>
+    </ul>
+    <BR>
+
+
+        <div>
+            <B><font color="blue">Output Table</B><Br></font>
+        {% for table in outTable %}
+        {{ table|safe }}
+        {% endfor %}
+        </div>
+    <BR>
+</head>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </script>
+<body>
+<center>
+      <dl>
+                    <div class="jumbotron">
+                            <h1>Supply Chain Forecasting </h1>
+                    </div>
+          <div class="container">
+</div>
+</script>
+    <meta charset="UTF-8">
+    <title>Mareana</title>
+    <form id = 'singleData' action = "{{url_for('singlePage')}}" method = "POST">
+        <ul>
+       <label>Material:</label>
+        <input type="text" id="material" name="material"><br><br>
+
+        <label>Group:</label>
+        <input type="text" id="group" name="group"><br><br>
+
+        <label>Expected Duration</label>
+        <input type="text" id="eduration" name="eduration"><br><br>
+
+
+        <label>Material Category:</label>
+        <input type="text" id="material_category" name="material_category"><br><br>
+
+        <label>Order Quantity:</label>
+        <input type="text" id="order_quantity" name="order_quantity"><br><br>
+
+        <label>Unit</label>
+        <input type="text" id="unit" name="unit"><br><br>
+
+        <label>Confirmation Start Date</label>
+        <input type="text" id="cdate" name="cdate"><br><br>
+
+
+        <a><button type="submit" class="btn btn-success" >Submit</button></a>
+        </ul>
+    </form>
+
+</head>
+</html>

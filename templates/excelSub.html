@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </script>
+<body>
+<center>
+      <dl>
+                    <div class="jumbotron">
+                            <h1>Supply Chain Forecasting </h1>
+                    </div>
+          <div class="container">
+</div>
+</script>
+    <meta charset="UTF-8">
+    <title>Mareana</title>
+    <ul>
+        <form id = 'singleData' action = "{{url_for('excelSub')}}" method = "POST" enctype="multipart/form-data">
+            <p class="ex2">SELECT EXCEL FILE</p>
+            <label class="btn btn-primary">
+			Browse <input id="file-picker" type="file"   name="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  style="display: none;">
+		    </label>
+            <input type="submit" value="Upload" id="upload-button" class="btn btn-success">
+        </form>
+
+
+    </ul>
+</head>
